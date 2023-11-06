@@ -1,0 +1,13 @@
+spring:
+  security:
+    oauth2:
+      client: "refresh-token-uri=https://oauth2.googleapis.com/token"
+
+logging:
+  level:
+    root: "info"
+  pattern:
+    console: "%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n"
+    file: "%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n"
+  file:
+    name: "logs/application.log"
