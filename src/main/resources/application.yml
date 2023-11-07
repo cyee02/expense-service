@@ -7,7 +7,7 @@ logging:
   level:
     root: "info"
   pattern:
-    console: "%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n"
-    file: "%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n"
+    console: "%d{dd-MM-yyyy HH:mm:ss} %highlight(%-5level) %magenta(%logger).%M:%line - %msg%n"
+    file: "%d{dd-MM-yyyy HH:mm:ss} %-5level %logger.%M:%line - %msg%n"
   file:
     name: "logs/application.log"
